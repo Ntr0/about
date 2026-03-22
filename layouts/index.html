@@ -16,7 +16,7 @@
       <p class="cv-tagline">{{ $p.tagline }}</p>
     </div>
     <div class="cv-contact">
-      <a href="mailto:{{ $p.contact.email }}">{{ $p.contact.email }}</a>
+      <a href="mailto:career@ntr0.info">{{ $p.contact.email | safeHTML }}</a>
       <a href="{{ $p.contact.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </header>
