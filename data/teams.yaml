@@ -1,0 +1,39 @@
+- slug: managed-kubernetes
+  name: Managed Kubernetes
+  role: ionos-director
+  summary: >
+    Core product team responsible for IONOS Managed Kubernetes — ~1,500 production
+    clusters and ~2,200 managed nodes. Involved with the product since its inception
+    in 2018 as a founding engineer; team lead from 2020, product director from 2023.
+    Currently running Kubernetes 1.34 (upstream: 1.35), continuously delivering new
+    versions, platform features, and compliance work while maintaining high availability
+    in production.
+  achievements:
+    - air-gapped
+    - bsi-certification
+    - mk8s-private-networking
+    - mk8s-conformance
+    - mk8s-founding
+
+- slug: observability
+  name: Observability Products
+  role: ionos-director
+  summary: >
+    Team responsible for the Logging Service and Monitoring Service. Product direction
+    driven jointly by the team lead and engineering leadership — a strong example of
+    engineering-led product ownership.
+  achievements:
+    - monitoring-launch
+    - logging-recovery
+
+- slug: platform-framework
+  name: Platform Engineering
+  role: ionos-director
+  summary: >
+    Platform Engineering team building and operating the internal developer platform
+    used across all PaaS product teams. The stack spans cluster provisioning
+    (Proxmox/Cluster API), access management (Teleport), secrets (Vault), artifact
+    distribution (Harbor, OCI), and GitOps (ArgoCD). Current strategic focus:
+    consolidating this into a cohesive, self-service IDP experience.
+  achievements:
+    - idp-initiative

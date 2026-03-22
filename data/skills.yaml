@@ -1,0 +1,30 @@
+- group: Cloud Infrastructure
+  items:
+    - Kubernetes (CKA + CKAD certified)
+    - OpenStack
+    - Cloud-native platform architecture
+    - Air-gapped and sovereign cloud environments
+
+- group: Engineering Leadership
+  items:
+    - Technical team management (up to 5 teams, ~33 engineers)
+    - Distributed and cross-location leadership
+    - Hiring, mentoring, and developing team leads
+    - Product direction without dedicated product management
+
+- group: Security & Compliance
+  items:
+    - BSI IT-Grundschutz
+    - C5 Type 1
+    - OpenVEX vulnerability communication
+
+- group: Programming
+  items:
+    - Go
+    - Perl
+
+- group: AI & Tooling
+  items:
+    - AI-native workflow (strategy, analytics, operational efficiency)
+    - MCP server development
+    - Claude API integration

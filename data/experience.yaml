@@ -1,0 +1,105 @@
+- slug: ionos
+  company: IONOS
+  url: https://www.ionos.com
+  roles:
+    - slug: ionos-director
+      title: Director Platform Products
+      start: "2023-08"
+      end: present
+      summary: >
+        Currently leading 2 product teams and 1 internal platform team — 23 engineers in
+        total — responsible for Managed Kubernetes, observability products (Logging Service,
+        Monitoring Service), Container Registry, and Platform Engineering. Previously led
+        up to 5 teams including functional direction of a Gloucester (UK) based engineering
+        team for nearly 2 years and the Core VPS team (STRATO) for under a year — both
+        subsequently moved to other organisational units in a reorganisation.
+      teams:
+        - managed-kubernetes
+        - observability
+        - platform-framework
+      achievements:
+        - monitoring-launch
+        - logging-recovery
+        - vpn-gateway
+        - air-gapped
+        - bsi-certification
+        - cloud-meetup
+        - openvex
+
+    - slug: ionos-head-paas
+      title: Head of PaaS Compute
+      start: "2021-07"
+      end: "2023-07"
+      summary: >
+        Team lead for Managed Kubernetes. Scaled the product, matured operations,
+        addressed security audit findings, and led a platform-wide OS migration
+        following CentOS 8 EOL.
+      teams:
+        - managed-kubernetes
+      achievements:
+        - mk8s-private-networking
+        - mk8s-conformance
+
+- slug: strato
+  company: STRATO AG
+  roles:
+    - slug: strato-head-paas
+      title: Head of PaaS Compute
+      start: "2020-12"
+      end: "2021-06"
+      summary: >
+        Continued in the same role following STRATO's integration into the IONOS group.
+      teams: []
+      achievements: []
+
+    - slug: strato-developer
+      title: Software Developer
+      start: "2015-09"
+      end: "2020-12"
+      summary: >
+        Built an OpenStack-based cloud platform from scratch. Pivoted in 2018 to become
+        a founding engineer on Managed Kubernetes for the IONOS Cloud (then ProfitBricks).
+        Also delivered Application Load Balancer, Network Load Balancer, and NAT Gateway
+        to meet a strategic customer requirement.
+      teams: []
+      achievements:
+        - openstack-platform
+        - mk8s-founding
+        - load-balancers
+
+- slug: orga-systems
+  company: Orga Systems
+  roles:
+    - slug: orga-senior-dev
+      title: Senior System Developer, Test & Acceptance
+      start: "2008-09"
+      end: "2015-09"
+      summary: >
+        Started in QA for carrier-grade billing and mediation software. Became lead
+        developer for an in-house Performance Test Framework (Perl). Introduced
+        modern OOP patterns to modernise the codebase — an early pattern of
+        improving tooling and raising the technical bar.
+      teams: []
+      achievements:
+        - perf-test-framework
+
+- slug: beta-systems
+  company: Beta Systems Software AG
+  roles:
+    - slug: beta-developer
+      title: System Development Engineer
+      start: "2007-08"
+      end: "2008-08"
+      summary: >
+        System development following completion of vocational training at the same company.
+      teams: []
+      achievements: []
+
+    - slug: beta-trainee
+      title: Trainee — Fachinformatiker Anwendungsentwicklung
+      start: "2005-09"
+      end: "2007-08"
+      summary: >
+        Vocational training in software development.
+      teams: []
+      achievements: []

@@ -1,0 +1,108 @@
+{{ define "main" }}
+{{ $p := .Site.Data.profile }}
+{{ $exp := .Site.Data.experience }}
+{{ $ach := .Site.Data.achievements }}
+{{ $skills := .Site.Data.skills }}
+{{ $edu := .Site.Data.education }}
+{{ $lang := .Site.Data.languages }}
+
+<div class="cv">
+
+  <!-- Header -->
+  <header class="cv-header">
+    <div class="cv-header-main">
+      <h1>{{ $p.name }}</h1>
+      <p class="cv-title">{{ $p.title }}</p>
+      <p class="cv-tagline">{{ $p.tagline }}</p>
+    </div>
+    <div class="cv-contact">
+      <a href="mailto:{{ $p.contact.email }}">{{ $p.contact.email }}</a>
+      <a href="{{ $p.contact.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="cv-section">
+    <h2>Profile</h2>
+    <p>{{ $p.summary }}</p>
+  </section>
+
+  <!-- Experience -->
+  <section class="cv-section">
+    <h2>Experience</h2>
+    {{ range $exp }}
+    <div class="cv-company">
+      <h3>{{ .company }}</h3>
+      {{ range .roles }}
+      <div class="cv-role">
+        <div class="cv-role-header">
+          <span class="cv-role-title">{{ .title }}</span>
+          <span class="cv-role-dates">{{ .start | replaceRE "-0?(\\d+)$" "" }} – {{ if eq .end "present" }}Present{{ else }}{{ .end | replaceRE "-0?(\\d+)$" "" }}{{ end }}</span>
+        </div>
+        <p class="cv-role-summary">{{ .summary }}</p>
+        {{ if .achievements }}
+        <ul class="cv-role-achievements">
+          {{ range .achievements }}
+          {{ $slug := . }}
+          {{ range $ach }}{{ if eq .slug $slug }}
+          <li>{{ .title }}</li>
+          {{ end }}{{ end }}
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- Key Achievements -->
+  <section class="cv-section">
+    <h2>Key Achievements</h2>
+    <div class="cv-achievements">
+      {{ range $ach }}
+      <div class="cv-achievement">
+        <h4>{{ .title }}</h4>
+        <p>{{ .summary }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="cv-section">
+    <h2>Technical Skills</h2>
+    <div class="cv-skills">
+      {{ range $skills }}
+      <div class="cv-skill-group">
+        <h4>{{ .group }}</h4>
+        <ul>
+          {{ range .items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="cv-section">
+    <h2>Education</h2>
+    {{ range $edu }}
+    <div class="cv-edu-entry">
+      <span class="cv-edu-qual">{{ .qualification }}</span>
+      <span class="cv-edu-inst">{{ .institution }}</span>
+      <span class="cv-edu-period">{{ .period }}{{ if .grade }} · {{ .grade }}{{ end }}</span>
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- Languages -->
+  <section class="cv-section cv-section--inline">
+    <h2>Languages</h2>
+    <ul class="cv-languages">
+      {{ range $lang }}<li>{{ .language }} <span class="cv-lang-level">({{ .level }})</span></li>{{ end }}
+    </ul>
+  </section>
+
+</div>
+{{ end }}

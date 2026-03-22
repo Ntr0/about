@@ -1,0 +1,151 @@
+- slug: monitoring-launch
+  title: Monitoring Service — Design, Build, Launch
+  summary: >
+    Team designed and launched the Monitoring Service in 2025. Reached 99.99% SLI
+    within the first operational quarters. Served as product owner alongside the
+    team lead throughout, from concept to production.
+  teams:
+    - observability
+  roles:
+    - ionos-director
+
+- slug: logging-recovery
+  title: Logging Service — Reliability Recovery
+  summary: >
+    Led recovery of Logging Service reliability to 99.9999% sustained since
+    December 2025 — a significant improvement driven by systematic root cause
+    identification and resolution. Demonstrates the team's ability to own and
+    fix hard reliability problems.
+  teams:
+    - observability
+  roles:
+    - ionos-director
+
+- slug: vpn-gateway
+  title: VPN Gateway Delivery
+  summary: >
+    Team delivered a production-ready VPN Gateway under tight deadline to support
+    a public sector tender. Cross-location execution across Berlin and the UK.
+  teams: []
+  roles:
+    - ionos-director
+
+- slug: air-gapped
+  title: Air-Gapped Environment Support
+  summary: >
+    Team extended Managed Kubernetes to support air-gapped and confidential environments.
+    Now responsible for deploying and operating multiple such installations.
+  teams:
+    - managed-kubernetes
+  roles:
+    - ionos-director
+
+- slug: bsi-certification
+  title: BSI IT-Grundschutz Recertification
+  summary: >
+    Led Managed Kubernetes through BSI IT-Grundschutz recertification. Also involved
+    in C5 Type 1 compliance work. Security and compliance treated as a continuous
+    engineering concern, not a point-in-time audit exercise.
+  teams:
+    - managed-kubernetes
+  roles:
+    - ionos-director
+
+- slug: cloud-meetup
+  title: Cloud Meetup — Division Knowledge Sharing
+  summary: >
+    Established a monthly 2-hour session open to the entire division — engineering,
+    PM, and Customer Care. Combines organisational updates with team lightning talks
+    to share knowledge and break down silos. A lightweight but effective cultural
+    initiative in a large, distributed organisation.
+  teams: []
+  roles:
+    - ionos-director
+
+- slug: openvex
+  title: OpenVEX as Vulnerability Communication Standard
+  summary: >
+    Introduced OpenVEX as a formal vulnerability communication channel. Now used
+    as the standard communication format with at least one major enterprise customer,
+    improving transparency and response coordination.
+  teams: []
+  roles:
+    - ionos-director
+
+- slug: idp-initiative
+  title: Internal Developer Platform Initiative
+  summary: >
+    Leading the evolution of the Platform Engineering team's tooling portfolio —
+    spanning cluster provisioning (Proxmox/Cluster API), access management (Teleport),
+    secrets (Vault), artifact distribution (Harbor, OCI), and GitOps (ArgoCD) —
+    into a cohesive Internal Developer Platform. Active initiative underway using
+    AI-assisted tooling to reduce support overhead and free engineering capacity
+    for platform development.
+  teams:
+    - platform-framework
+  roles:
+    - ionos-director
+
+- slug: openstack-platform
+  title: OpenStack Cloud Platform — Built from Scratch
+  summary: >
+    Designed and built an OpenStack-based cloud platform at STRATO using Foreman,
+    Puppet, Ansible, and related tooling. Evolved into an OpenStack-as-a-Service
+    offering — technically successful and a direct predecessor to later Kubernetes work.
+  teams: []
+  roles:
+    - strato-developer
+
+- slug: mk8s-founding
+  title: Managed Kubernetes — Founding Engineer
+  summary: >
+    Core engineer from the product's inception in 2018 at STRATO/ProfitBricks.
+    Contributed to the foundational architecture that later scaled to 1,500+
+    production clusters across multiple regions.
+  teams:
+    - managed-kubernetes
+  roles:
+    - strato-developer
+
+- slug: load-balancers
+  title: Load Balancer and NAT Gateway Products
+  summary: >
+    Developed Application Load Balancer, Network Load Balancer, and NAT Gateway
+    to meet a strategic requirement for a high-profile ProfitBricks customer.
+  teams: []
+  roles:
+    - strato-developer
+
+- slug: mk8s-private-networking
+  title: Private Networking — MVP to Production
+  summary: >
+    Team matured Managed Kubernetes private networking from MVP to a security-hardened
+    production feature: nodes running in private LANs without public IP exposure,
+    enabling customers to isolate workloads from the public internet.
+  teams:
+    - managed-kubernetes
+  roles:
+    - ionos-head-paas
+
+- slug: mk8s-conformance
+  title: Continuous Kubernetes Conformance Certification
+  summary: >
+    Team delivered Kubernetes versions 1.20 through 1.27, achieving CNCF conformance
+    certification with 1.27. Led the CentOS 8 EOL migration and full OS replacement across the entire fleet. Also drove IONOS joining the CNCF as a Silver member —
+    the first formal step in establishing the company's standing in the cloud-native
+    ecosystem.
+  teams:
+    - managed-kubernetes
+  roles:
+    - ionos-head-paas
+
+- slug: perf-test-framework
+  title: Performance Test Framework
+  summary: >
+    Lead developer for an in-house Performance Test Framework (written in Perl) for
+    carrier-grade billing software (C/Oracle). Introduced Moose (OOP framework) to
+    modernise the framework codebase — an early example of improving tooling and
+    raising the technical bar.
+  teams: []
+  roles:
+    - orga-senior-dev

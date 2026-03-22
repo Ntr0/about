@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="cv">
+  <a href="{{ .Site.BaseURL }}" class="cv-back">← Back to CV</a>
+  <article class="cv-detail">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
