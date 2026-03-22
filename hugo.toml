@@ -1,4 +1,4 @@
-baseURL = 'https://ntr0.github.io/about'
+baseURL = 'https://about.ntr0.info/'
 languageCode = 'en-us'
 title = 'About Ntr0'
 publishDir = "docs"
